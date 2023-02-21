@@ -32,7 +32,7 @@ export default GoogleApiWrapper(
   ))(MapContainer)
 
   function apikey(){
-    const [map, setMap] =useState(flase);
+    
     return (
         <>
        <GoogleApiWrapper apiKey='AIzaSyAgiEuIFsUIz0foa1JQNicp6EgR8XBX0A0' />
