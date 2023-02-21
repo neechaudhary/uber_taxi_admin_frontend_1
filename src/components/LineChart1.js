@@ -29,7 +29,7 @@ const data = {
 ]
 };
 
-  return (
+  return ( 
     <div>
         <Line data={data} />
     </div>
