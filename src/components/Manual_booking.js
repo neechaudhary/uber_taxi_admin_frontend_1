@@ -39,9 +39,33 @@ const Manual_booking = () => {
                             </div>
                         </div>
 
-                        <div className='shadow-md border mt-4 p-4'>
-                            <div className='text-xl font-bold tracking-wider'>Ride details of taxi ride</div>
-                            <div className='flex flex-wrap justify-between'>
+                        <div className='shadow-md border mt-4'>
+                            <div className='text-xl font-bold tracking-wider p-4'>Ride details of taxi ride</div>
+                            <div className='md:flex w-full'>
+                                <div className='w-full md:w-1/2 py-2'>
+                                    <div className='sm:w-full sm:justify-between md:flex md:flex-col px-4 py-2 w-full'>
+                                        <label for="Pickup Address" className='text-xl font-semibold py-2'>Pickup Address</label>
+                                        <input type="text" placeholder=" Enter Pickup Address" className="p-2 input input-bordered rounded-none outline-none input-info w-full h-10" />
+                                    </div>
+                                    <div className='sm:w-full sm:justify-between md:flex md:flex-col px-4 py-2 w-full'>
+                                        <label for="Destination Address" className='text-xl font-semibold py-2'>Destination Address</label>
+                                        <input type="text" placeholder=" Enter Destination Address" className="p-2 input input-bordered rounded-none outline-none input-info w-full h-10" />
+                                    </div>
+                                    <div className='sm:w-full sm:justify-between md:flex md:flex-col px-4 py-2 w-full'>
+                                        <label htmlFor="pickup date" className='text-xl font-semibold py-2'>Pickup date</label>
+                                        <input type="date"   className='p-2 input input-bordered rounded-none outline-none input-info w-full  h-10'/>
+                                    </div>
+                                    <div className='sm:w-full sm:justify-between md:flex md:flex-col px-4 py-2 w-full '>
+                                        <label htmlFor="pickup date" className='text-xl font-semibold py-2'>Pickup date</label>
+                                        <input type="time"  className='p-2 input input-bordered rounded-none outline-none input-info w-full  h-10'/>
+                                    </div>
+                                </div>
+                                <div className='w-full md:w-1/2 mt-4 -z-10 relative min-h-[400px]'>
+                                        <Google_maps />
+                                </div>
+                            </div>
+
+                            {/* <div className='flex w-full'>
                                 <div className='w-full sm:w-1/2 '>
                                     <div className='sm:w-full sm:flex sm:justify-between md:flex md:flex-col md:w-[400px] px-2 py-3 w-full'>
                                         <label for="Pickup Address" className='text-xl font-semibold py-2'>Pickup Address</label>
@@ -59,14 +83,12 @@ const Manual_booking = () => {
                                         <label htmlFor="pickup date" className='text-xl font-semibold py-2'>Pickup date</label>
                                         <input type="time"  className='p-2 input input-bordered rounded-none outline-none input-info w-full  md:max-w-md h-10'/>
                                     </div>
-
                                 </div>
-                                <div className='border w-full lg:w-1/2 '>
-                                    <div className='google-map'>
-                                        <Google_maps/>
-                                    </div>
+                                <div className='w-full sm:w-1/2 relative'>
+                                        <Google_maps />
                                 </div>
-                            </div>
+                            </div> */}
+                            
 
 
                         </div>
